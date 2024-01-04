@@ -26,7 +26,3 @@ function mouseDragged() {
   fill(255);
   ellipse(mouseX, mouseY, 15, 15);
 }
-
-function draw() {
-
-}
