@@ -1,11 +1,13 @@
 let express = require('express');
+let cors = require('cors');
 let socket = require('socket.io');
 
 let app = express();
 
+app.use(cors());
 app.use(express.static('public'));
 
-let server = app.listen('3000');
+let server = app.listen('9000');
 
 let io = socket(server);
 

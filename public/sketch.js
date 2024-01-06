@@ -1,10 +1,10 @@
 let socket;
 
 function setup() {
-  createCanvas(350, 350);
+  createCanvas(window.screen.availWidth/3, window.screen.availWidth/3);
   background('#1b1b1b');
 
-  socket = io.connect('http://localhost:3000/');
+  socket = io.connect('http://localhost:9000/');
   socket.on('mouseOpponent', newDrawing);
 }
 
